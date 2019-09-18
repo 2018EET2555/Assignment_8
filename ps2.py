@@ -50,6 +50,10 @@ def game():
 		v=int(v)
 		if isvalid(p,v,player):
 			dic=enter(p,v,player)
+			for i in arr:
+				for j in i:
+					print(arr[i][j],end=' |')
+				print("\n")
 			num.append(v)
 			pos.append(p)
 			if(dic==4):
